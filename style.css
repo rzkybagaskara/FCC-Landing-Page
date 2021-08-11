@@ -1,0 +1,210 @@
+<style > {
+  @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap");
+}
+</style > * {
+  margin: 0;
+  padding: 3px;
+  box-sizing: border-box;
+  height: 1000px;
+}
+
+#title {
+  left: 60px;
+  display: flex;
+  position: relative;
+}
+body {
+  line-height: 1.3;
+  min-height: 1300px;
+}
+#nav-bar {
+  top: 0px;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding: 0 50px;
+}
+
+#nav-bar a {
+  padding: 0 15px;
+  font-weight: 600;
+  color: black;
+}
+
+#nav-bar a:hover {
+  background-color: #50afab;
+  transition: background-color 1s;
+}
+
+#header {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  padding: 25px 0px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: #f1ae2c;
+  opacity: 0.8;
+  z-index: 5;
+  height: 10px;
+  font-family: "Montserrat", sans-serif;
+}
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+#header-img {
+  width: 50px;
+  display: flex;
+  height: 50px;
+  right: 250px;
+  position: relative;
+  margin-right: auto;
+}
+
+#hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100px;
+  margin-top: 40px;
+}
+
+#hero > h1 {
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-family: "Montserrat", sans-serif;
+  font-size: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-weight: bold;
+}
+
+.description {
+  text-align: center;
+  padding-top: 5px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.description > p {
+  margin-top: 0px;
+  font-family: "Montserrat", sans-serif;
+}
+
+#demo {
+  display: block;
+  text-align: center;
+  padding-top: 40px;
+}
+#products {
+  padding: 50px;
+  flex-direction: row;
+  justify-content: center;
+  display: flex;
+}
+
+.produk-mie {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: calc(100% / 3);
+  margin: 20px;
+  border: 2px solid;
+  border-radius: 10px;
+}
+
+.produk-mie > h2 {
+  background-color: #ecce54;
+  padding: 10px;
+  margin-top: 0px;
+  text-transform: uppercase;
+  border-radius: 5px;
+}
+
+.produk-mie > ol {
+  margin: 10px 0;
+}
+
+.produk-mie > ol > li {
+  padding: 5px 0;
+  width: auto;
+  height: 30px;
+  text-align: justify;
+  font-family: "sans-serif";
+}
+
+.produk-mie > button {
+  border: 0;
+  margin: 10px 3cm;
+  background-color: #f1c40f;
+  font-weight: 500;
+  font-size: large;
+  padding: 5px;
+}
+
+.produk-mie > button:hover {
+  background-color: orange;
+  transition: background-color 1s;
+  cursor: pointer;
+}
+
+#contact {
+  text-align: center;
+}
+
+#form > input {
+  width: 6cm;
+  height: 0.6cm;
+  border: 3px 3px 3px 3px;
+  border-radius: 4px;
+  padding: 0.3rem;
+  display: block;
+  margin: 0.9rem auto;
+}
+
+#submit {
+  padding-bottom: 20px;
+  height: 40px;
+  font-size: 1rem;
+  border: none;
+  font-weight: 700;
+  text-transform: uppercase;
+  border: 1px black solid;
+  border-radius: 2px;
+  background: yellow;
+  cursor: pointer;
+}
+
+#submit:hover {
+  background-color: orange;
+  transition: background-color 1s;
+}
+#submit input #input {
+  width: 150px;
+}
+
+@media (max-width: 800px) {
+  #products {
+    flex-direction: column;
+  }
+  .produk-mie {
+    max-width: 300px;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+}
